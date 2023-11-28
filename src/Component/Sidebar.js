@@ -28,9 +28,8 @@ const SidebarContent = () => {
             </div>
           </div>
         </MenuItem>
-        <MenuItem icon={<img src={Home} alt="home"/>}>Dashboard</MenuItem>
-        <MenuItem icon={<img src={Daftar} alt="daftar"/>}>Daftar Kelas</MenuItem>
-        <MenuItem icon={<img src={Detail} alt="detail"/>}>Detail Kelas</MenuItem>
+        <MenuItem icon={<img src={Home} alt="home"/>}>Modul</MenuItem>
+        <MenuItem icon={<img src={Daftar} alt="daftar"/>}>Kelas</MenuItem>
       </Menu>
       <Menu iconShape="square" className="logout-button-sidebar">
         <MenuItem icon={<img src={SignOut} alt= "signout"/>}>Log Out</MenuItem>
