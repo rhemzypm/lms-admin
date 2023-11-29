@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Dashboard from "./Pages/Dashboard";
 import Course from "./Pages/Course";
-
+import Module from "./Pages/Module";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
     path: "/Course",
     element: <Course />,
   },
+  {
+    path: "/Module",
+    element: <Module />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
