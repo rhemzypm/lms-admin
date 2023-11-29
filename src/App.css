@@ -1,8 +1,10 @@
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .App {
@@ -11,7 +13,7 @@ html, body, #root {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #2D76E5;
+  background-color: #2d76e5;
 }
 
 .login-page-container,
@@ -26,7 +28,7 @@ html, body, #root {
   background-color: #fff;
 }
 
-.sun-img{
+.sun-img {
   position: absolute;
   width: 140px;
   height: 140px;
@@ -34,7 +36,7 @@ html, body, #root {
   margin-right: 50vw;
 }
 
-.login-page-container h1{
+.login-page-container h1 {
   font-size: 30px;
   padding-top: 5vh;
 }
@@ -53,7 +55,7 @@ html, body, #root {
 }
 
 .login-form-container label {
-  margin : 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -61,7 +63,7 @@ html, body, #root {
 }
 
 .login-form-container input,
-.forpass-form-container input{
+.forpass-form-container input {
   padding: 10px;
   border: 1px solid #000;
   background-color: #fff;
@@ -84,7 +86,7 @@ html, body, #root {
   font-size: 25px;
 }
 
-.login-form-container h5{
+.login-form-container h5 {
   display: flex;
   align-items: flex-start;
   font-weight: lighter;
@@ -92,54 +94,54 @@ html, body, #root {
 
 .login-form-container button {
   padding: 10px 40px;
-  background-color: #2D76E5;
+  background-color: #2d76e5;
   color: #fff;
   border-radius: 10px;
   border: none;
   font-size: 15px;
 }
 
-.centered-icon{
+.centered-icon {
   position: relative;
   margin-top: 5vh;
 }
 
-.padlock-icon{
+.padlock-icon {
   font-size: 90px;
   padding: 10px;
   border: 1px solid #000;
   border-radius: 100%;
 }
 
-.forpass-page-container h1{
+.forpass-page-container h1 {
   font-size: 23px;
   font-weight: normal;
 }
 
-.forpass-page-container span{
+.forpass-page-container span {
   width: 250px;
   font-size: 13px;
   color: #898989;
   margin-top: -8px;
 }
 
-.forpass-form-container label{
-  margin : 0 10px 5px 10px;
+.forpass-form-container label {
+  margin: 0 10px 5px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-size: 14px;
 }
 
-.button-container{
+.button-container {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-.send-link-button{
+.send-link-button {
   padding: 10px 30px;
-  background-color: #2D76E5;
+  background-color: #2d76e5;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -147,7 +149,7 @@ html, body, #root {
   cursor: pointer;
 }
 
-.go-back-button{
+.go-back-button {
   margin-top: 10px;
   padding: 10px 30px;
   background-color: #fff;
@@ -158,7 +160,7 @@ html, body, #root {
   cursor: pointer;
 }
 
-.footer-container{
+.footer-container {
   position: absolute;
   list-style: none;
   display: flex;
@@ -167,7 +169,7 @@ html, body, #root {
   bottom: 10vh;
 }
 
-.footer-container p{
+.footer-container p {
   font-size: 20px;
 }
 
@@ -181,4 +183,58 @@ html, body, #root {
   height: 60vh;
   right: 8vh;
   bottom: 7.5vh;
+}
+
+/* COURSE */
+.Modul-container {
+  height: 95vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d76e5;
+}
+.Modul-header p {
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+}
+.Modul-header,
+.Modul-header2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  margin-left: 200px;
+}
+.Modul-header2 p {
+  color: #fff;
+  font-size: 18px;
+  display: inline;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+section {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 70px;
+  margin-left: 200px;
+}
+.Modul-topic {
+  width: 70%;
+  padding-right: 120px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  border-radius: 10px;
+}
+.Modul-topic img {
+  max-width: 25%;
+  height: auto;
+  margin: 10px;
+}
+.Modul-topic p {
+  color: #090909;
+  padding: 10px;
+  font-size: 18px;
 }
