@@ -53,8 +53,7 @@ const SidebarContent = () => {
         <MenuItem icon={<img src={modul} alt="modul" />}>Modul</MenuItem>
         <MenuItem icon={<img src={Topik} alt="Topik" />}>Topik</MenuItem>
         <MenuItem icon={<img src={Kegiatan} alt="kegiatan" />}>Kegiatan</MenuItem>
-        <MenuItem icon={<img src={Daftar} alt="daftar" style={{ fontWeight: 'bold' }} />}>Kelas
-</MenuItem>
+        <MenuItem icon={<img src={Daftar} alt="daftar" style={{ fontWeight: 'bold' }} />}>Kelas </MenuItem>
       </Menu>
       <Menu iconShape="square" className="logout-button-sidebar">
         <MenuItem icon={<img src={SignOut} alt="signout" />}>Log Out</MenuItem>
