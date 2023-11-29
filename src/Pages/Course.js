@@ -15,9 +15,9 @@ function Course() {
           <p>Modul</p>
         </div>
         <div className="Modul-header2">
-          <p>Modul </p>
-          <p>Modul 1 </p>
-          <p>Topik 1 </p>
+          <p>Modul ></p>
+          <p>Modul 1 ></p>
+          <p>Topik 1 ></p>
           <p>Kegiatan </p>
         </div>
         <section className="modul-section">

@@ -335,3 +335,91 @@ section {
   margin-right: 10px;
   text-align: center;
 }
+
+/*========== ADD MODULE ==========*/
+.Modul-container2 {
+  height: 95vh;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.Add-modul2 {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  height: 78vh;
+  min-width: 133vh;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.Add-modul2 p {
+  font-size: 23px;
+  font-weight: bolder;
+  margin-right: 85vh;
+}
+.Form-modul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2f8ff;
+  border-radius: 10px;
+  position: absolute;
+  text-align: left;
+  margin-top: 60px;
+  padding-bottom: 38vh;
+  max-width: 135vh;
+}
+.Form-modul p {
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.Form-modul p.required {
+  color: red;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+input[type="text"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  font-size: 15px;
+  padding: 13px 15px;
+  border: 2px solid #b7b7b7;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+.Form-modul p.info {
+  color: rgb(163, 163, 163);
+  font-size: 15px;
+  font-weight: bold;
+}
+.Button-modul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+button.Cancel {
+  color: #fff;
+  background-color: red;
+  border-radius: 10px;
+  margin-top: 70vh;
+  margin-bottom: 20px;
+  padding: 10px 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button.Save {
+  color: #fff;
+  background-color: #2d76e5;
+  border-radius: 10px;
+  margin-top: 70vh;
+  margin-bottom: 20px;
+  padding: 10px 35px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
