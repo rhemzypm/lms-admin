@@ -185,18 +185,18 @@ body,
   bottom: 7.5vh;
 }
 
-/* COURSE */
+/*========== COURSE ==========*/
 .Modul-container {
-  height: 95vh;
+  display: flex;
   flex-direction: column;
+  height: 95vh;
   align-items: center;
-  background-color: #2d76e5;
-  margin-left: 280px;
+  margin-left: 290px;
   margin-right: 20px;
 }
 .Modul-header p {
   color: #fff;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
 }
 .Modul-header,
@@ -226,17 +226,112 @@ section {
 .Modul-topic {
   width: calc(30.333% - 10px);
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 3px rgba(36, 39, 37, 0.15);
   display: flex;
   border-radius: 10px;
 }
 .Modul-topic img {
-  max-width: 25%;
+  max-width: 13%;
   height: auto;
-  margin: 10px;
+  margin: 15px;
 }
 .Modul-topic p {
   color: #090909;
   padding: 10px;
   font-size: 18px;
+}
+
+/*========== COURSE TABLE ==========*/
+.Modul-table {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  margin-right: 20px;
+}
+.Modul-header3 p,
+.Modul-header3 {
+  text-align: left;
+  margin-right: 49vh;
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.Add-modul {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  margin-top: 35px;
+  height: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+.Add-modul p {
+  color: #2d76e5;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.Modul-img {
+  width: 18px;
+  margin-right: 15px;
+  padding-top: 15px;
+}
+.Table-section {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 280px;
+  margin-right: 10px;
+}
+.Table-modul {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffcfc;
+  position: absolute;
+  height: 80vh;
+  border-radius: 10px;
+  align-items: center;
+}
+.styledTable {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 30px;
+  min-width: 135vh;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(36, 39, 37, 0.15);
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.styledTable th {
+  border: 1px solid #2d76e5;
+  background-color: #2d76e5;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+}
+
+.styledTable td {
+  border-bottom: 1px solid #c2d6f3;
+  padding: 15px;
+  text-align: left;
+}
+.Edit-table td,
+.Edit-table {
+  padding: 5px;
+  background-color: #2d76e5;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-right: 10px;
+  text-align: center;
 }
