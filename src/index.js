@@ -9,6 +9,7 @@ import Dashboard from "./Pages/Dashboard";
 import Course from "./Pages/Course";
 import CourseTable from "./Pages/CourseTable";
 import Module from "./Pages/Module";
+import Topik from "./Pages/Topik";
 import AddModule from "./Pages/AddModule";
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
     path: "/Module",
     element: <Module />,
   },
+  {
+    path: "Topik",
+    element: <Topik />,
+  }
   {
     path: "/AddModule",
     element: <AddModule />,
