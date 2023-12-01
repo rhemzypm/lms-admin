@@ -40,11 +40,11 @@ const router = createBrowserRouter([
   {
     path: "Topik",
     element: <Topik />,
-  }
+  },
   {
     path: "/AddModule",
     element: <AddModule />,
-  },
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
