@@ -1,7 +1,22 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Sidebar from "../Component/Sidebar";
 import Modul from "../Assets/Modul.png";
 
 function CourseTable() {
+  const [moduleData, setModuleData] = useState([
+    { id: 1, name: 'Modul Dukungan Teknologi Informasi untuk Bisnis UMKM' },
+    // ... other initial module data
+  ]);
+
+  const addModule = () => {
+    const newModule = {
+      id: moduleData.length + 1,
+      name: `Modul Baru ${moduleData.length + 1}`,
+    };
+    setModuleData([...moduleData, newModule]);
+  };
+
   return (
     <div className="App">
       <Sidebar />
@@ -11,12 +26,12 @@ function CourseTable() {
         </div>
         <div className="Add-modul">
           <img src={Modul} alt="Modul" className="Modul-img" />
-          <p>Tambah Modul</p>
+          <p onClick={addModule}>Tambah Modul</p>
         </div>
         <div className="Table-section">
           <div className="Table-modul">
             <div className="ButtomTable">
-              <table class="styledTable">
+              <table className="styledTable">
                 <thead>
                   <tr>
                     <th>No.</th>
@@ -25,33 +40,19 @@ function CourseTable() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="clickable-row">
-                    <td>1</td>
-                    <td>
-                      Modul Dukungan Teknologi Informasi untuk Bisnis UMKM
-                    </td>
-                    <td>
-                      <div className="Edit-table">Edit</div>
-                    </td>
-                  </tr>
-                </tbody>
-                <tbody>
-                  <tr class="clickable-row">
-                    <td>2</td>
-                    <td>Modul Pengenalan Regulasi dalam Bisnis UMKM</td>
-                    <td>
-                      <div className="Edit-table">Edit</div>
-                    </td>
-                  </tr>
-                </tbody>
-                <tbody>
-                  <tr class="clickable-row">
-                    <td>3</td>
-                    <td>Modul Strategi dan Pengembangan Bisnis UMKM</td>
-                    <td>
-                      <div className="Edit-table">Edit</div>
-                    </td>
-                  </tr>
+                  {moduleData.map((module) => (
+                    <tr key={module.id} className="clickable-row">
+                      <td>{module.id}</td>
+                      <td>{module.name}</td>
+                      <td>
+                        <Link to={`/edit-page/${module.id}`}>
+                          <div className="Edit-table" role="button">
+                            Edit
+                          </div>
+                        </Link>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
