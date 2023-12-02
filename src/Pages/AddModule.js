@@ -14,8 +14,6 @@ function AddModule() {
         text: "Judul Modul tidak boleh lebih dari 100 karakter!",
       });
     } else {
-      // Simpan logika Anda di sini jika judulModul valid
-      // Misalnya, menambahkan Swal.fire untuk sukses
       Swal.fire({
         icon: "success",
         title: "Good job!",

@@ -36,18 +36,19 @@ function Topik() {
   return (
     <div className="App" style={containerStyles}>
       <Sidebar />
+      
       <div className="content">
         <BoxComponent>
           <Typography variant="h5" style={boldTextStyles}>
-            Halaman Modul Kosong
+            Halaman Topik Kosong
           </Typography>
           <img src={NotFound} alt="Not Found" style={{ width: "200px", height: "200px", marginTop: "16px" }} />
           <Typography>
-            Ayo daftarkan Modul melalui tombol “Tambah Modul”
+            Ayo daftarkan Modul melalui tombol “Tambah Topik"
           </Typography>
         </BoxComponent>
         <button style={buttonStyles}>
-          <FaPlus style={iconStyles} /> Tambah Modul
+          <FaPlus style={iconStyles} /> Tambah Topik
         </button>
       </div>
     </div>

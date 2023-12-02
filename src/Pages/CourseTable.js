@@ -6,10 +6,9 @@ import Modul from "../Assets/Modul.png";
 function CourseTable() {
   const [moduleData, setModuleData] = useState([
     { id: 1, name: 'Modul Dukungan Teknologi Informasi untuk Bisnis UMKM' },
-    // ... other initial module data
   ]);
 
-  const addModule = () => {
+  const AddModule = () => {
     const newModule = {
       id: moduleData.length + 1,
       name: `Modul Baru ${moduleData.length + 1}`,
@@ -26,7 +25,7 @@ function CourseTable() {
         </div>
         <div className="Add-modul">
           <img src={Modul} alt="Modul" className="Modul-img" />
-          <p onClick={addModule}>Tambah Modul</p>
+          <p onClick={AddModule}>Tambah Modul</p>
         </div>
         <div className="Table-section">
           <div className="Table-modul">
