@@ -9,7 +9,7 @@ import Course from "./Pages/Course";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Module from "./Pages/Module";
 import Topik from "./Pages/Topik";
-
+import Pretest from "./Pages/Pretest";
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
         <Route path="ForgotPassword" element={<ForgotPassword />} />
         <Route path="Module" element={<Module />} />
         <Route path="Topik" element={<Topik />} />
+        <Route path="Pretest" element={<Pretest />} />
         <Route path="/addmodule" element={<AddModule />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
