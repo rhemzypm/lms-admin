@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-import { FaUser, FaChalkboardTeacher, FaSignOutAlt } from "react-icons/fa";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { FaUser } from "react-icons/fa";
 import modul from "../Assets/sidebar/modul.png";
 import Daftar from "../Assets/sidebar/Vector.png";
 import Kegiatan from "../Assets/sidebar/Kegiatan.png";
@@ -18,7 +18,7 @@ const SidebarContent = () => {
         position: "absolute",
         left: "0",
         marginLeft: "10px",
-        height: "90vh",
+        height: "90%",
         borderRadius: "10px",
         overflow: "hidden",
         backgroundColor: "white",
@@ -46,9 +46,13 @@ const SidebarContent = () => {
             </div>
           </div>
         </MenuItem>
-        <MenuItem icon={<img src={modul} alt="modul" />}>Modul</MenuItem>
-        <MenuItem icon={<img src={Topik} alt="Topik" />}>Topik</MenuItem>
-        <MenuItem icon={<img src={Kegiatan} alt="kegiatan" />}>
+        <MenuItem href="Module" icon={<img src={modul} alt="modul" />}>
+          Modul
+        </MenuItem>
+        <MenuItem href="Topik" icon={<img src={Topik} alt="Topik" />}>
+          Topik
+        </MenuItem>
+        <MenuItem href="Course" icon={<img src={Kegiatan} alt="kegiatan" />}>
           Kegiatan
         </MenuItem>
         <MenuItem
