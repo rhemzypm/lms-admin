@@ -41,9 +41,13 @@ function Dashboard() {
           <Typography variant="h5" style={boldTextStyles}>
             Halaman Modul Kosong
           </Typography>
-          <img src={NotFoundImage} alt="Not Found" style={{ width: "200px", height: "200px", marginTop: "16px" }} />
+          <img
+            src={NotFoundImage}
+            alt="Not Found"
+            style={{ width: "200px", height: "200px", marginTop: "16px" }}
+          />
           <Typography>
-          Ayo daftarkan Modul melalui tombol “Tambah Modul”
+            Ayo daftarkan Modul melalui tombol “Tambah Modul”
           </Typography>
         </BoxComponent>
         <button style={buttonStyles}>

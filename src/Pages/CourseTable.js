@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../Component/Sidebar";
 import Modul from "../Assets/Modul.png";
 
 function CourseTable() {
   const [moduleData, setModuleData] = useState([
-    { id: 1, name: 'Modul Dukungan Teknologi Informasi untuk Bisnis UMKM' },
+    { id: 1, name: "Modul Dukungan Teknologi Informasi untuk Bisnis UMKM" },
   ]);
 
   const AddModule = () => {

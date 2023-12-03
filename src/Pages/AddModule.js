@@ -40,7 +40,11 @@ function AddModule() {
             <p>Judul Modul</p>
             <form>
               <label htmlFor="modul">
-                <input type="text" id="modul" placeholder="Isi judul modul anda" />
+                <input
+                  type="text"
+                  id="modul"
+                  placeholder="Isi judul modul anda"
+                />
               </label>
               <p className="info">Maksimal 100 karakter</p>
             </form>

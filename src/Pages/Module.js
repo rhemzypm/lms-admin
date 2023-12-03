@@ -24,7 +24,7 @@ const Module = () => {
           onChange={handlePageChange}
           variant="outlined"
           shape="rounded"
-          style={{ color: 'white' }}
+          style={{ color: "white" }}
         />
       </Stack>
     </div>
