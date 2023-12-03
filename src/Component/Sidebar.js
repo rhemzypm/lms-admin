@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { FaUser } from "react-icons/fa";
 import modul from "../Assets/sidebar/modul.png";
@@ -46,13 +47,22 @@ const SidebarContent = () => {
             </div>
           </div>
         </MenuItem>
-        <MenuItem href="Module" icon={<img src={modul} alt="modul" />}>
+        <MenuItem
+          component={<Link to="/Module" />}
+          icon={<img src={modul} alt="modul" />}
+        >
           Modul
         </MenuItem>
-        <MenuItem href="Topik" icon={<img src={Topik} alt="Topik" />}>
+        <MenuItem
+          component={<Link to="/Topik"></Link>}
+          icon={<img src={Topik} alt="Topik" />}
+        >
           Topik
         </MenuItem>
-        <MenuItem href="Course" icon={<img src={Kegiatan} alt="kegiatan" />}>
+        <MenuItem
+          component={<Link to="/Course"></Link>}
+          icon={<img src={Kegiatan} alt="course" />}
+        >
           Kegiatan
         </MenuItem>
         <MenuItem
