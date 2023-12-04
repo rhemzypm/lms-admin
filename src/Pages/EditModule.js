@@ -33,11 +33,11 @@ function AddModule() {
         </div>
         <div className="Modul-header2">
           <p>Modul</p>
-          <p> Tambah Modul </p>
+          <p>> Tambah Modul </p>
         </div>
         <div className="Add-modul">
           <img src={Modul} alt="Modul" className="Modul-img" />
-          <p onClick={AddModule}>Tambah Modul</p>
+          <p>Tambah Modul</p>
         </div>
         <div className="Add-modul2">
           <p>Tambah Modul</p>

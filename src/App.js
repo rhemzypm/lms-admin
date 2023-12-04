@@ -9,6 +9,8 @@ import Course from "./Pages/Course";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Module from "./Pages/Module";
 import Topik from "./Pages/Topik";
+import EditModule from "./Pages/EditModule";
+// import AddModule from "./Pages/AddModule";
 import Pretest from "./Pages/Pretest";
 import AddTopik from "./Pages/AddTopik";
 import TopikTable from "./Pages/TopikTable";
@@ -25,7 +27,8 @@ function App() {
         <Route path="Module" element={<Module />} />
         <Route path="Topik" element={<Topik />} />
         <Route path="Pretest" element={<Pretest />} />
-        <Route path="/addmodule" element={<AddModule />} />
+        <Route path="/Editmodule" element={<EditModule />} />
+        <Route path="/AddModule" element={<AddModule />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="AddTopik" element={<AddTopik />} />
         <Route path="TopikTable" element={<TopikTable />} />
