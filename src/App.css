@@ -5,6 +5,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Slab", serif;
+  overflow: hidden;
 }
 
 .App {
@@ -203,7 +204,6 @@ body,
 .Modul-header2 {
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
   display: flex;
 }
 .Modul-header2 p {
@@ -269,9 +269,7 @@ section {
   margin-right: 35px;
   margin-top: 35px;
   height: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
-  padding-bottom: 20px;
+  padding: 0px 20px 15px;
 }
 .Add-modul p {
   color: #2d76e5;
@@ -280,7 +278,7 @@ section {
   padding-top: 15px;
 }
 .Modul-img {
-  width: 18px;
+  width: 17px;
   margin-right: 15px;
   padding-top: 15px;
 }
@@ -289,7 +287,7 @@ section {
   flex-direction: column;
   height: 98vh;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 18px;
   margin-left: 280px;
   margin-right: 10px;
 }
@@ -346,18 +344,25 @@ section {
 
 .Add-modul2 {
   display: flex;
+  justify-content: space-between;
+  /* flex-direction: column;
+  align-items: flex-start; */
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
-  height: 78vh;
-  min-width: 133vh;
+  height: 80vh;
+  max-width: 135vh;
   padding-left: 30px;
-  padding-right: 40px;
+  padding-right: 26px;
+}
+.required {
+  color: red;
+  display: inline-block;
 }
 .Add-modul2 p {
   font-size: 23px;
   font-weight: bolder;
-  margin-right: 85vh;
+  margin-right: 80vh;
 }
 .Form-modul {
   width: 100%;
@@ -368,20 +373,17 @@ section {
   position: absolute;
   text-align: left;
   margin-top: 60px;
-  padding-bottom: 38vh;
-  max-width: 135vh;
+  padding-bottom: 39vh;
+
+  max-width: 133vh;
 }
 .Form-modul p {
   color: black;
   margin-bottom: 15px;
   margin-left: 20px;
   font-weight: lighter;
-}
-.Form-modul p.required {
-  color: red;
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
+  margin-left: 30px;
+  font-size: 20px;
 }
 input[type="text"] {
   font-family: Arial, Helvetica, sans-serif;
@@ -389,12 +391,18 @@ input[type="text"] {
   font-size: 15px;
   padding: 13px 15px;
   border: 2px solid #b7b7b7;
-  margin-left: 15px;
+  margin-left: 30px;
   border-radius: 10px;
 }
+#modul::placeholder {
+  color: rgb(204, 204, 204);
+  font-weight: bold;
+}
+.Form-modul2 p.info,
 .Form-modul p.info {
   color: rgb(163, 163, 163);
   font-size: 15px;
+  padding-right: 6vh;
   font-weight: bold;
 }
 .Button-modul {
@@ -406,9 +414,9 @@ button.Cancel {
   color: #fff;
   background-color: red;
   border-radius: 10px;
-  margin-top: 70vh;
-  margin-bottom: 20px;
-  padding: 10px 40px;
+  margin-top: 71vh;
+  margin-bottom: 30px;
+  padding: 0px 45px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -417,10 +425,85 @@ button.Save {
   color: #fff;
   background-color: #2d76e5;
   border-radius: 10px;
-  margin-top: 70vh;
-  margin-bottom: 20px;
-  padding: 10px 35px;
+  margin-top: 71vh;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  padding: 0px 40px;
   outline: none;
   border: none;
   cursor: pointer;
+}
+/*========== TOPIC TABLE ==========*/
+.Table-section2 {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: 280px;
+  margin-right: 10px;
+}
+
+/*========== ADD TOPIC==========*/
+.Form-modul2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #e2f8ff;
+  border-radius: 10px;
+  position: absolute;
+  text-align: left;
+  margin-top: 60px;
+  padding-bottom: 36vh;
+  max-width: 133vh;
+}
+.Form-modul2 p {
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-section-kanan,
+.form-section-kiri {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.form-section-kanan p {
+  margin-left: -35vh;
+}
+.required-kiri,
+.required-kanan {
+  color: red;
+  display: inline-block;
+  padding-right: 25vh;
+}
+input[type="topik"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 360px;
+  font-size: 15px;
+  padding: 13px 15px;
+  border: 2px solid #b7b7b7;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+input[type="modul"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 360px;
+  font-size: 15px;
+  padding: 13px 15px;
+  border: 2px solid #b7b7b7;
+  margin-left: -35vh;
+  border-radius: 10px;
+}
+#topik::placeholder {
+  color: rgb(204, 204, 204);
+  font-weight: bold;
 }

@@ -37,7 +37,9 @@ function AddModule() {
         <div className="Add-modul2">
           <p>Tambah Modul</p>
           <div className="Form-modul">
-            <p>Judul Modul</p>
+            <p>
+              Judul Modul <span className="required">*</span>
+            </p>
             <form>
               <label htmlFor="modul">
                 <input
