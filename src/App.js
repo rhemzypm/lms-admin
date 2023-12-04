@@ -10,6 +10,9 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import Module from "./Pages/Module";
 import Topik from "./Pages/Topik";
 import Pretest from "./Pages/Pretest";
+import AddTopik from "./Pages/AddTopik";
+import TopikTable from "./Pages/TopikTable";
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +27,8 @@ function App() {
         <Route path="Pretest" element={<Pretest />} />
         <Route path="/addmodule" element={<AddModule />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="AddTopik" element={<AddTopik />} />
+        <Route path="TopikTable" element={<TopikTable />} />
       </Routes>
     </div>
   );
