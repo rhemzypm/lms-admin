@@ -45,22 +45,23 @@ function AddModule() {
   return (
     <div className="App">
       <Sidebar />
-      <div className="Modul-container2">
-        <div className="Modul-header3">
-          <p>Modul</p>
-          <div className="modul">
-            <div className="Add-modul" onClick={handleDeleteClick}>
-              <img src={Modul} alt="Modul" className="Modul-img" />
-              <p>Hapus Modul</p>
+      <div className="Modul-container3">
+        <div className="header-container">
+          <div className="Modul-header3">
+            <div className="add-module-text">
+              <h1>Modul</h1>
+              <p className="">
+                Modul <span> tambah modul</span>
+              </p>
+              <div className="Modul-header2"></div>
             </div>
           </div>
+          <div className="">
+            <button className="Add-modul3" onClick={handleDeleteClick}>
+              <p>Hapus Modul</p>
+            </button>
+          </div>
         </div>
-
-        <div className="Modul-header2">
-          <p>Modul</p>
-          <p> Tambah Modul </p>
-        </div>
-
         <div className="Add-modul2">
           <p>Ubah Modul</p>
           <div className="Form-modul">

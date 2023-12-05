@@ -23,7 +23,10 @@ function CourseTable() {
         <div className="Modul-header3">
           <p>Modul</p>
         </div>
-
+        <div className="Add-modul">
+          <img src={Modul} alt="Modul" className="Modul-img" />
+          <p onClick={AddModule}>Tambah Modul</p>
+        </div>
         <div className="Table-section">
           <div className="Table-modul">
             <div className="ButtomTable">
