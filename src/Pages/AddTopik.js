@@ -14,7 +14,7 @@ function AddTopik() {
         </div>
         <div className="Add-modul2">
           <p>Tambah Modul</p>
-          <div className="Form-modul2">
+          <div className="Form-modul">
             <div class="form-container">
               <div class="form-section-kiri">
                 <p>

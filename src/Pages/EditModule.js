@@ -22,7 +22,7 @@ function AddModule() {
       confirmButtonColor: "#d33",
       cancelButtonColor: "#3085d6",
       confirmButtonText: "Hapus",
-      reverseButtons: true, // Reverses the buttons' order
+      reverseButtons: true,
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
@@ -57,12 +57,12 @@ function AddModule() {
             </div>
           </div>
           <div className="">
-            <button className="Add-modul3" onClick={handleDeleteClick}>
+            <button className="Remove-modul" onClick={handleDeleteClick}>
               <p>Hapus Modul</p>
             </button>
           </div>
         </div>
-        <div className="Add-modul2">
+        <div className="Add-modul3">
           <p>Ubah Modul</p>
           <div className="Form-modul">
             <p>

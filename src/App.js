@@ -14,6 +14,7 @@ import EditModule from "./Pages/EditModule";
 import Pretest from "./Pages/Pretest";
 import AddTopik from "./Pages/AddTopik";
 import TopikTable from "./Pages/TopikTable";
+import PretestTable from "./Pages/PretestTable";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="AddTopik" element={<AddTopik />} />
         <Route path="TopikTable" element={<TopikTable />} />
+        <Route path="PretestTable" element={<PretestTable />} />
       </Routes>
     </div>
   );
