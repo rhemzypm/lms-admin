@@ -10,7 +10,7 @@ function TopikTable() {
           <p>Modul</p>
         </div>
         <div className="Modul-header2">
-          <p>Modul ></p>
+          <p>Modul </p>
           <p>Modul 1 </p>
         </div>
         <div className="Add-modul">
