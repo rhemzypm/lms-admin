@@ -17,6 +17,7 @@ import TopikTable from "./Pages/TopikTable";
 import PretestTable from "./Pages/PretestTable";
 import AddVideo from "./Pages/AddVideo";
 import EditVideo from "./Pages/EditVideo";
+import BuatSoal from "./Pages/BuatSoal";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="PretestTable" element={<PretestTable />} />
         <Route path="AddVideo" element={<AddVideo />} />
         <Route path="EditVideo" element={<EditVideo />} />
+        <Route path="BuatSoal" element={<BuatSoal />} />
       </Routes>
     </div>
   );

@@ -2,10 +2,11 @@ import React from "react";
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
 import Sidebar from "../Component/Sidebar";
-import Modul from "../Assets/Modul.png";
 import ReactDOMServer from "react-dom/server";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 
-function EditVideo() {
+function BuatSoal() {
   const handleDeleteClick = () => {
     Swal.fire({
       html: ReactDOMServer.renderToString(
@@ -44,52 +45,15 @@ function EditVideo() {
           <div className="Modul-header3">
             <div className="add-module-text">
               <h1>Kegiatan</h1>
-              <p className="">Kegiatan &gt; Tambah Video</p>
+              <p className="">Kegiatan &gt; Pretest &gt; Buat Soal </p>
               <div className="Modul-header2"></div>
             </div>
           </div>
-          <div className="">
-            <button className="Remove-modul" onClick={handleDeleteClick}>
-              <p>Hapus Video</p>
-            </button>
-          </div>
         </div>
         <div className="Add-modul-video">
-          <p>Video</p>
-          <div className="Form-modul-video">
-            <p>
-              Unggah Video <span className="required">*</span>
-            </p>
-            <form>
-              <label htmlFor="modul">
-                <input
-                  type="text"
-                  id="modul"
-                  placeholder="Isi judul modul anda"
-                />
-              </label>
-              <p className="info">Maksimal 100 karakter</p>
-            </form>
-            <p>Deskripsi</p>
-            <form>
-              <label for="Deskripsi">
-                <input
-                  type="text-deskripsi"
-                  id="topik"
-                  placeholder="Klik disini untuk mengedit deskripsi video"
-                />
-                <p className="info">Maksimal 200 kata</p>
-              </label>
-            </form>
-          </div>
           <div className="Button-modul">
             <button className="Cancel">Batal</button>
-            <button
-              className="Save"
-              // onClick={handleSaveClick}
-            >
-              Simpan
-            </button>
+            <button className="Save">Simpan</button>
           </div>
         </div>
       </div>
@@ -97,4 +61,4 @@ function EditVideo() {
   );
 }
 
-export default EditVideo;
+export default BuatSoal;

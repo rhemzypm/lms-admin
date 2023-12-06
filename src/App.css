@@ -568,14 +568,10 @@ input[type="modul"] {
   justify-content: space-between;
 }
 
-.add-module-text span {
-  padding-left: 5px;
-  font-size: 18px;
-  font-weight: lighter;
-}
 .add-module-text p {
   font-size: 18px;
   font-weight: lighter;
+  margin-right: 20rem;
 }
 .add-module-text h1 {
   margin-top: 25px;
@@ -727,6 +723,8 @@ input[type="modul"] {
 .form-section-kanan2 p {
   margin-left: 3vh;
 }
+.buat-soal {
+}
 .required-kiri2,
 .required-kanan2,
 .required-kiri-bawah2,
@@ -802,4 +800,24 @@ input[type="Text-Deskripsi"] {
   font-size: 15px;
   padding-right: 6vh;
   font-weight: bold;
+}
+
+/*========== BUAT SOAL ==========*/
+.Add-modul-soal {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  height: 80vh;
+  max-width: 133vh;
+  margin-left: 5px;
+  padding-left: 40px;
+  padding-right: 7.5rem;
+}
+.Add-modul-soal p {
+  font-size: 23px;
+  font-weight: bolder;
+  color: #000;
+  margin-right: 80vh;
 }
