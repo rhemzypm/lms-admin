@@ -803,21 +803,17 @@ input[type="Text-Deskripsi"] {
 }
 
 /*========== BUAT SOAL ==========*/
-.Add-modul-soal {
-  display: flex;
-  justify-content: space-between;
+.box {
   background-color: #fff;
-  border-radius: 10px;
-  position: absolute;
-  height: 80vh;
-  max-width: 133vh;
-  margin-left: 5px;
-  padding-left: 40px;
-  padding-right: 7.5rem;
+  width: 100%;
+  height: 300px;
 }
-.Add-modul-soal p {
-  font-size: 23px;
-  font-weight: bolder;
-  color: #000;
-  margin-right: 80vh;
+.title {
+  text-align: left;
+  margin-left: 16rem;
+  margin-top: -2rem;
+  color: #fff;
+}
+.subtitle {
+  margin-top: -1rem;
 }
