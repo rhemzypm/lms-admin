@@ -569,12 +569,12 @@ input[type="modul"] {
 }
 
 .add-module-text span {
-  padding-left: 10px;
+  padding-left: 5px;
   font-size: 18px;
   font-weight: lighter;
 }
 .add-module-text p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
 }
 .add-module-text h1 {
@@ -694,4 +694,112 @@ input[type="modul"] {
   margin-right: 10px;
   text-align: center;
   cursor: pointer;
+}
+/*========== VIDEO ==========*/
+.Form-modul2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2f8ff;
+  border-radius: 10px;
+  position: absolute;
+  text-align: left;
+  margin-top: 60px;
+  padding-bottom: 10vh;
+  max-width: 133vh;
+}
+.Form-modul2 p {
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-weight: lighter;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.form-section-kanan2,
+.form-section-kiri2 {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.form-section-kanan2 p {
+  margin-left: 3vh;
+}
+.required-kiri2,
+.required-kanan2,
+.required-kiri-bawah2,
+.required-kanan-bawah2 {
+  color: red;
+  display: inline-block;
+  padding-right: 20vh;
+}
+input[type="Deskripsi"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 360px;
+  font-size: 15px;
+  padding: 60px 15px;
+  border: 2px solid #b7b7b7;
+  margin-left: 3vh;
+  border-radius: 10px;
+}
+#Deskripsi::placeholder {
+  color: black;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Add-modul-video {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  height: 80vh;
+  max-width: 133vh;
+  margin-left: 5px;
+  padding-left: 40px;
+  padding-right: 7.5rem;
+}
+.Add-modul-video p {
+  font-size: 23px;
+  font-weight: bolder;
+  color: #000;
+  margin-right: 80vh;
+}
+input[type="Text-Deskripsi"] {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 360px;
+  font-size: 15px;
+  padding: 5rem 13rem;
+  border: 2px solid #b7b7b7;
+  margin-left: 3vh;
+  padding-right: -100px;
+  border-radius: 10px;
+}
+.Form-modul-video p {
+  color: black;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-weight: lighter;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.Form-modul-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2f8ff;
+  border-radius: 10px;
+  position: absolute;
+  text-align: left;
+  margin-top: 60px;
+  padding-bottom: 3vh;
+  max-width: 133vh;
+}
+.Form-modul-video p.info {
+  color: rgb(163, 163, 163);
+  font-size: 15px;
+  padding-right: 6vh;
+  font-weight: bold;
 }

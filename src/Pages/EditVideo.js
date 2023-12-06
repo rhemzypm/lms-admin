@@ -5,17 +5,14 @@ import Sidebar from "../Component/Sidebar";
 import Modul from "../Assets/Modul.png";
 import ReactDOMServer from "react-dom/server";
 
-function AddModule() {
+function EditVideo() {
   const handleDeleteClick = () => {
     Swal.fire({
       html: ReactDOMServer.renderToString(
         <div className="Edit-popup">
           Apakah anda yakin ingin
           <span style={{ color: "red" }}> menghapus </span>
-          <span style={{ color: "blue" }}>
-            "Modul Dukungan teknologi informasi untuk bisnis UMKM"
-          </span>
-          ini dari daftar modul?
+          video ini
         </div>
       ),
       showCancelButton: true,
@@ -30,10 +27,7 @@ function AddModule() {
           showConfirmButton: false,
           html: ReactDOMServer.renderToString(
             <div className="Edit-popup">
-              <span style={{ color: "blue" }}>
-                "Modul Dukungan teknologi informasi untuk bisnis UMKM"
-              </span>
-              berhasil
+              Video berhasil
               <span style={{ color: "red" }}> dihapus </span>
             </div>
           ),
@@ -49,24 +43,24 @@ function AddModule() {
         <div className="header-container">
           <div className="Modul-header3">
             <div className="add-module-text">
-              <h1>Modul</h1>
+              <h1>Kegiatan</h1>
               <p className="">
-                Modul &gt;<span>Tambah Modul</span>
+                Kegiatan &gt;<span> Tambah Video</span>
               </p>
               <div className="Modul-header2"></div>
             </div>
           </div>
           <div className="">
             <button className="Remove-modul" onClick={handleDeleteClick}>
-              <p>Hapus Modul</p>
+              <p>Hapus Video</p>
             </button>
           </div>
         </div>
-        <div className="Add-modul3">
-          <p>Ubah Modul</p>
-          <div className="Form-modul">
+        <div className="Add-modul-video">
+          <p>Video</p>
+          <div className="Form-modul-video">
             <p>
-              Judul Modul <span className="required">*</span>
+              Unggah Video <span className="required">*</span>
             </p>
             <form>
               <label htmlFor="modul">
@@ -77,6 +71,17 @@ function AddModule() {
                 />
               </label>
               <p className="info">Maksimal 100 karakter</p>
+            </form>
+            <p>Deskripsi</p>
+            <form>
+              <label for="Deskripsi">
+                <input
+                  type="text-deskripsi"
+                  id="topik"
+                  placeholder="Klik disini untuk mengedit deskripsi video"
+                />
+                <p className="info">Maksimal 200 kata</p>
+              </label>
             </form>
           </div>
           <div className="Button-modul">
@@ -94,4 +99,4 @@ function AddModule() {
   );
 }
 
-export default AddModule;
+export default EditVideo;
