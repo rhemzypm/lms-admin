@@ -1,19 +1,34 @@
+import React from "react";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 import Sidebar from "../Component/Sidebar";
+import ReactDOMServer from "react-dom/server";
 
 function AddVideo() {
+  const handleSaveClick = async () => {
+    Swal.fire({
+      html: ReactDOMServer.renderToString(
+        <div className="Edit-popup">Video Berhasi Diunggah</div>
+      ),
+      icon: "success",
+      showConfirmButton: false,
+    });
+  };
   return (
     <div className="App">
       <Sidebar />
       <div className="Modul-container2">
         <div className="Modul-header3">
-          <p>Modul</p>
+          <p>Kegiatan</p>
         </div>
         <div className="Modul-header2">
-          <p>Modul &gt;</p>
-          <p>Tambah Modul </p>
+          <p>Kegiatan &gt;</p>
+          <p>Modul 1 &gt; </p>
+          <p>Topik 1 &gt;</p>
+          <p>Video </p>
         </div>
         <div className="Add-modul2">
-          <p>Tambah Modul</p>
+          <p>Video</p>
           <div className="Form-modul2">
             <div class="form-container">
               <div class="form-section-kiri2">
@@ -77,7 +92,9 @@ function AddVideo() {
           </div>
           <div className="Button-modul">
             <button className="Cancel">Batal</button>
-            <button className="Save">Simpan</button>
+            <button className="Save" onClick={handleSaveClick}>
+              Simpan
+            </button>
           </div>
         </div>
       </div>

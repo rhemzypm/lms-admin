@@ -44,7 +44,9 @@ function EditVideo() {
           <div className="Modul-header3">
             <div className="add-module-text">
               <h1>Kegiatan</h1>
-              <p className="">Kegiatan &gt; Tambah Video</p>
+              <p className="">
+                Kegiatan &gt;<span> Tambah Video</span>
+              </p>
               <div className="Modul-header2"></div>
             </div>
           </div>
@@ -54,42 +56,72 @@ function EditVideo() {
             </button>
           </div>
         </div>
-        <div className="Add-modul-video">
+        <div className="Add-modul2">
           <p>Video</p>
-          <div className="Form-modul-video">
-            <p>
-              Unggah Video <span className="required">*</span>
-            </p>
-            <form>
-              <label htmlFor="modul">
-                <input
-                  type="text"
-                  id="modul"
-                  placeholder="Isi judul modul anda"
-                />
-              </label>
-              <p className="info">Maksimal 100 karakter</p>
-            </form>
-            <p>Deskripsi</p>
-            <form>
-              <label for="Deskripsi">
-                <input
-                  type="text-deskripsi"
-                  id="topik"
-                  placeholder="Klik disini untuk mengedit deskripsi video"
-                />
-                <p className="info">Maksimal 200 kata</p>
-              </label>
-            </form>
+          <div className="Form-modul2">
+            <div class="form-container">
+              <div class="form-section-kiri2">
+                <p>
+                  Unggah Video 1 <span className="required-kiri2">*</span>
+                </p>
+                <form>
+                  <label for="topik">
+                    <input
+                      type="topik"
+                      id="topik"
+                      placeholder="Unggah video anda"
+                    />
+                    <p className="info">Maksimal 100 mb</p>
+                  </label>
+                </form>
+                <p>
+                  Deskripsi <span className="required-kiri-bawah2">*</span>
+                </p>
+                <form>
+                  <label>
+                    <input
+                      type="Deskripsi"
+                      id="topik"
+                      placeholder="Klik disini untuk mengedit deskripsi video"
+                    />
+                    <p className="info">Maksimal 200 kata</p>
+                  </label>
+                </form>
+              </div>
+
+              <div class="form-section-kanan2">
+                <p>
+                  Unggah Video 2 <span className="required-kanan2">*</span>
+                </p>
+                <form>
+                  <label for="topik">
+                    <input
+                      type="modul"
+                      id="modul"
+                      placeholder="Unggah video anda"
+                    />
+                    <p className="info">Maksimal 100 mb</p>
+                  </label>
+                </form>
+                <p>
+                  Deskripsi <span className="required-kanan-bawah2">*</span>
+                </p>
+                <form>
+                  <label for="topik">
+                    <input
+                      type="Deskripsi"
+                      id="topik"
+                      placeholder="Klik disini untuk mengedit deskripsi video"
+                    />
+                    <p className="info">Maksimal 200 kata</p>
+                  </label>
+                </form>
+              </div>
+            </div>
           </div>
           <div className="Button-modul">
             <button className="Cancel">Batal</button>
-            <button
-              className="Save"
-              // onClick={handleSaveClick}
-            >
-              Simpan
-            </button>
+            <button className="Save">Simpan</button>
           </div>
         </div>
       </div>
