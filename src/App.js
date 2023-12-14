@@ -18,6 +18,8 @@ import PretestTable from "./Pages/PretestTable";
 import AddVideo from "./Pages/AddVideo";
 import EditVideo from "./Pages/EditVideo";
 import BuatSoal from "./Pages/BuatSoal";
+import UploadVideo from "./Pages/UploadVideo";
+import UploadAssg from "./Pages/UploadAssg";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
         <Route path="AddVideo" element={<AddVideo />} />
         <Route path="EditVideo" element={<EditVideo />} />
         <Route path="BuatSoal" element={<BuatSoal />} />
+        <Route path="UploadVideo" element={<UploadVideo />} />
+        <Route path="UploadAssg" element={<UploadAssg />} />
       </Routes>
     </div>
   );
