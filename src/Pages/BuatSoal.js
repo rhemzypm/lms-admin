@@ -16,5 +16,4 @@ function BuatSoal() {
     </div>
   );
 }
-
 export default BuatSoal;

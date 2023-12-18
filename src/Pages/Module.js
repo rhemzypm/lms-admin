@@ -14,9 +14,9 @@ const Module = () => {
   return (
     <div className="App">
       <Sidebar />
-      {/* Your main content here */}
+      {/* Main Content taruh sini */}
 
-      {/* Change pagination color to white */}
+      {/* Pagination Code */}
       <Stack spacing={2} sx={{ my: 2 }}>
         <Pagination
           count={totalPages}
